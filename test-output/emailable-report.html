@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">69,077</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cma.testcases.TC_BrowserStack</td><td><a href="#m0">LoginSuccessfull_POC</a></td><td rowspan="1">1651241547674</td><td rowspan="1">65898</td></tr></tbody>
+</table>
+<h2>Test2</h2><h3 id="m0">com.cma.testcases.TC_BrowserStack#LoginSuccessfull_POC</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>{device=Oppo Reno 6, os_version=11.0}</td><td>public void com.cma.testcases.TC_BrowserStack.LoginSuccessfull_POC(java.lang.Object,java.lang.reflect.Method) throws java.lang.InterruptedException,java.io.IOException</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.view.View[@content-desc=&apos;Disagree and Exit&apos;]&apos; does not exist in DOM anymore (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-009&apos;, ip: &apos;192.168.190.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.shaip.workforce.MainAct..., appPackage: com.shaip.workforce, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 7.0, buildName: Java Android demo POC, bundleID: com.shaip.workforce, bundleId: com.shaip.workforce, chromeOptions: {w3c: false}, chromedriverArgs: [--adb-port=5038], chromedriverPort: 18083, chromedriverPorts: [[18133, 18143]], databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: oppo reno 6, deviceApiLevel: 30, deviceManufacturer: OPPO, deviceModel: CPH2251, deviceName: LFPVW485EICMEQMZ, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: LFPVW485EICMEQMZ, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Oppo Reno 6-11.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, noReset: true, orig_os: android, osVersion: 11.0, os_version: 11.0, pixelRatio: 3, platform: ANDROID, platformName: Android, platformVersion: 11, projectName: Shaip-CMA, realMobile: true, sessionName: LoginSuccessfull_POC, skipServerInstallation: true, statBarHeight: 115, systemPort: 8203, takesScreenshot: true, udid: LFPVW485EICMEQMZ, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2038, left: 0, top: 115, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 2d205abb2187c8c0b53e3434dace2d66bc0c6595
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.cma.pages.ActionClass.WaitForElementToBeVisible(ActionClass.java:61)
+	at com.cma.pages.ProjectsPage.isAgreementDisplayed(ProjectsPage.java:49)
+	at com.cma.testcases.TC_BrowserStack.LoginSuccessfull_POC(TC_BrowserStack.java:70)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
